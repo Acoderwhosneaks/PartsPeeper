@@ -181,6 +181,50 @@ def test_fastener_qty_unverified_is_info():
     assert not any(e.get("type") == "FLAG_FASTENER_QTY_UNVERIFIED" for e in rep["errors"])
 
 
+# --- Miami fixture #1 acceptance target -------------------------------------
+# SOURCE OF TRUTH: phobos's INDEPENDENT oracle (seq64), NOT the pipeline's own
+# extractor. Wiring the expected count from the thing being checked would let a
+# dropped part hide inside its own baseline (the seq35 '277/C60' number did
+# exactly that and false-passed the C24A-D drop on p69). The acceptance count
+# must come from an independent source; D's gate only consumes it.
+MIAMI_FAMILY_ACCEPTANCE = {"C": 64, "CP": 46, "TB": 46, "RC": 42, "RB": 42, "STF": 41}
+#                          281 ruled-schedule parts  (+1 fastener, family 'SCR' = 282 total)
+
+
+def _marks_for(counts):
+    """Synthesize one record per distinct mark matching a family-count profile."""
+    recs = []
+    for fam, n in counts.items():
+        for i in range(1, n + 1):
+            mk = f"{fam}{i}"
+            recs.append(_rec(part_mark=mk, assembly=mk,
+                             dim_x='1"', dim_y='1"', dim_dia=None, finish="",
+                             description=f'{mk} / synthetic {fam} part / 1" x 1".'))
+    return recs
+
+
+def test_family_gate_passes_on_full_oracle_count():
+    recs = _marks_for(MIAMI_FAMILY_ACCEPTANCE)
+    rep = V.validate(recs, expected_family_counts=MIAMI_FAMILY_ACCEPTANCE)
+    assert rep["ok"], V.format_report(rep)
+    assert rep["coverage_by_family"]["n_distinct_marks"] == 281
+
+
+def test_family_gate_catches_c24_style_drop():
+    # Regression for phobos seq64: 4 C-family parts dropped (C24A-D stacked-cell bug).
+    # Gate fed the ORACLE count (C=64) must FAIL when the pipeline yields only C=60.
+    recs = _marks_for(MIAMI_FAMILY_ACCEPTANCE)
+    dropped = [r for r in recs if V.family_of(r["part_mark"]) == "C"][:4]
+    for d in dropped:
+        recs.remove(d)
+    rep = V.validate(recs, expected_family_counts=MIAMI_FAMILY_ACCEPTANCE)
+    assert not rep["ok"], "a 4-part undercount in family C MUST fail the gate"
+    fam_errs = rep["coverage_by_family"]["errors"]
+    assert any(e["type"] == "FAMILY_COUNT_MISMATCH" and e["family"] == "C"
+               and e["expected"] == 64 and e["actual"] == 60 for e in fam_errs)
+    assert any(e["type"] == "TOTAL_COUNT_MISMATCH" and e["actual"] == 277 for e in fam_errs)
+
+
 def _run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     failed = 0
