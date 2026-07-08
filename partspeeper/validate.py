@@ -20,6 +20,7 @@ zero errors (warnings are allowed).
 """
 from __future__ import annotations
 
+import re
 from typing import Any, Iterable
 
 from .assemble import _f, _as_qty, build_rows
@@ -27,6 +28,19 @@ from .assemble import _f, _as_qty, build_rows
 
 def _mark(rec):
     return (_f(rec, "part_mark") or "").strip()
+
+
+def family_of(mark: str) -> str:
+    """Part FAMILY = the leading alphabetic prefix of a mark.
+
+    Generic structural rule (NOT a Miami lookup): C30A->'C', RC29->'RC',
+    STF12->'STF', TB1->'TB', F1->'F'. Marks with no leading letter -> '?'.
+    A different parts doc with marks like 'PL4' / 'W12' derives 'PL' / 'W' the
+    same way, so coverage-by-family generalizes across sources.
+    """
+    m = (mark or "").strip()
+    match = re.match(r"^([A-Za-z]+)", m)
+    return match.group(1).upper() if match else "?"
 
 
 def coverage_report(records: Iterable[Any], expected_marks: Iterable[str] | None = None):
@@ -58,6 +72,57 @@ def coverage_report(records: Iterable[Any], expected_marks: Iterable[str] | None
     return {
         "n_records": len(records),
         "n_distinct_marks": len(seen),
+        "errors": errors,
+        "warnings": warnings,
+    }
+
+
+def coverage_by_family(records: Iterable[Any],
+                       expected_family_counts: dict | None = None):
+    """Aggregate coverage view: distinct marks grouped by family.
+
+    `expected_family_counts` is an OPTIONAL per-source profile map, e.g. the
+    Miami fixture supplies {'C':60,'CP':46,'TB':46,'RC':42,'RB':42,'STF':42,...}.
+    It is NEVER hardcoded in the core — pass it in from the fixture/profile so a
+    different parts doc brings its own expectation (or none). When provided, a
+    per-family or total mismatch is an ERROR (a dropped part or a phantom part —
+    e.g. a 'BY OTHERS' item that slipped through — moves a count off target).
+    When omitted, this is a pure informational distribution.
+    """
+    distinct: dict[str, set] = {}
+    for rec in records:
+        m = _mark(rec)
+        if not m:
+            continue
+        distinct.setdefault(family_of(m), set()).add(m)
+    actual = {fam: len(marks) for fam, marks in sorted(distinct.items())}
+
+    errors, warnings = [], []
+    if expected_family_counts is not None:
+        expected = {str(k).upper(): int(v) for k, v in expected_family_counts.items()}
+        for fam in sorted(set(expected) | set(actual)):
+            exp = expected.get(fam)
+            act = actual.get(fam, 0)
+            if exp is None:
+                errors.append({"type": "FAMILY_UNEXPECTED", "family": fam,
+                               "actual": act,
+                               "detail": f"family '{fam}' not in expected profile "
+                                         "(possible phantom / BY-OTHERS leak)"})
+            elif act != exp:
+                errors.append({"type": "FAMILY_COUNT_MISMATCH", "family": fam,
+                               "expected": exp, "actual": act,
+                               "detail": f"family '{fam}': expected {exp}, got {act}"})
+        exp_total = sum(expected.values())
+        act_total = sum(actual.values())
+        if exp_total != act_total:
+            errors.append({"type": "TOTAL_COUNT_MISMATCH",
+                           "expected": exp_total, "actual": act_total,
+                           "detail": f"expected {exp_total} distinct parts, got {act_total}"})
+
+    return {
+        "actual": actual,
+        "expected": expected_family_counts,
+        "n_distinct_marks": sum(actual.values()),
         "errors": errors,
         "warnings": warnings,
     }
@@ -106,26 +171,35 @@ def verbatim_report(records: Iterable[Any]):
 
 
 # flags emitted by [C] (mars) -> severity in D's report.
-# Data-completeness flags block (op #19 requires COMPLETE specs); role/qty are soft.
+# Data-completeness flags block (op #19 requires COMPLETE specs); role/qty are soft;
+# FINISH_INHERITED / FASTENER_QTY_UNVERIFIED are INFO — deliberate, ratified states
+# that must NOT fail the build, but ARE surfaced as an audit trail for the 100% claim.
 _FLAG_SEVERITY = {
     "NO_MARK": "error",
     "MISSING_DIMS": "error",
-    "MISSING_FINISH": "error",
+    "MISSING_FINISH": "error",           # only when finish unresolvable at ALL tiers
     "FINISH_CODE_UNRESOLVED": "error",
     "SEGMENT_ROLE_UNKNOWN": "warning",
     "MISSING_QTY": "warning",
+    "FINISH_INHERITED": "info",          # finish resolved from page/assembly, not per-part
+    "FASTENER_QTY_UNVERIFIED": "info",   # Jeff-ratified: qty blank, never fabricated
 }
 
 
 def flags_report(records: Iterable[Any]):
-    """Ingest [C]'s per-record flags[] as validation signals (mars seq26)."""
-    errors, warnings = [], []
+    """Ingest [C]'s per-record flags[] as validation signals (mars seq26).
+
+    Routes each flag to error / warning / info by _FLAG_SEVERITY. Unknown flags
+    default to warning (surface, don't silently swallow). info never blocks.
+    """
+    errors, warnings, info = [], [], []
+    bucket = {"error": errors, "warning": warnings, "info": info}
     for rec in records:
         for flag in (_f(rec, "flags") or []):
             sev = _FLAG_SEVERITY.get(flag, "warning")
             entry = {"type": f"FLAG_{flag}", "part_mark": _mark(rec)}
-            (errors if sev == "error" else warnings).append(entry)
-    return {"errors": errors, "warnings": warnings}
+            bucket[sev].append(entry)
+    return {"errors": errors, "warnings": warnings, "info": info}
 
 
 def qty_report(records: Iterable[Any]):
@@ -139,16 +213,20 @@ def qty_report(records: Iterable[Any]):
     return {"warnings": warnings}
 
 
-def validate(records: Iterable[Any], expected_marks: Iterable[str] | None = None):
+def validate(records: Iterable[Any],
+             expected_marks: Iterable[str] | None = None,
+             expected_family_counts: dict | None = None):
     records = list(records)
     cov = coverage_report(records, expected_marks)
+    fam = coverage_by_family(records, expected_family_counts)
     verb = verbatim_report(records)
     qty = qty_report(records)
     flg = flags_report(records)
     rows = build_rows(records)
 
-    errors = cov["errors"] + verb["errors"] + flg["errors"]
-    warnings = cov["warnings"] + verb["warnings"] + qty["warnings"] + flg["warnings"]
+    errors = cov["errors"] + fam["errors"] + verb["errors"] + flg["errors"]
+    warnings = cov["warnings"] + fam["warnings"] + verb["warnings"] + qty["warnings"] + flg["warnings"]
+    info = flg["info"]
     return {
         "ok": len(errors) == 0,
         "n_input_records": len(records),
@@ -156,11 +234,13 @@ def validate(records: Iterable[Any], expected_marks: Iterable[str] | None = None
         "n_header_rows": sum(1 for r in rows if r.kind == "header"),
         "n_part_rows": sum(1 for r in rows if r.kind == "part"),
         "coverage": cov,
+        "coverage_by_family": fam,
         "verbatim": verb,
         "qty": qty,
         "flags": flg,
         "errors": errors,
         "warnings": warnings,
+        "info": info,
     }
 
 
@@ -170,6 +250,10 @@ def format_report(report: dict) -> str:
     lines.append(f"[D validation] {status}  "
                  f"({report['n_input_records']} records -> {report['n_output_rows']} rows: "
                  f"{report['n_header_rows']} headers + {report['n_part_rows']} parts)")
+    fam = report.get("coverage_by_family")
+    if fam:
+        dist = ", ".join(f"{k}={v}" for k, v in fam["actual"].items())
+        lines.append(f"  families ({fam['n_distinct_marks']} distinct): {dist or '(none)'}")
     if report["errors"]:
         lines.append(f"  ERRORS ({len(report['errors'])}):")
         for e in report["errors"]:
@@ -178,6 +262,11 @@ def format_report(report: dict) -> str:
         lines.append(f"  warnings ({len(report['warnings'])}):")
         for w in report["warnings"]:
             lines.append(f"    - {w}")
+    info = report.get("info") or []
+    if info:
+        lines.append(f"  info / audit trail ({len(info)}):")
+        for i in info:
+            lines.append(f"    - {i}")
     if not report["errors"] and not report["warnings"]:
         lines.append("  clean: no errors, no warnings.")
     return "\n".join(lines)
