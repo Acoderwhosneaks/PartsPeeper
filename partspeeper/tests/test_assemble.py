@@ -127,6 +127,60 @@ def test_c_flags_are_ingested():
     assert any(w["type"] == "FLAG_SEGMENT_ROLE_UNKNOWN" for w in rep["warnings"])
 
 
+def test_family_of_is_generic():
+    # structural prefix rule, not a Miami lookup
+    assert V.family_of("C30A") == "C"
+    assert V.family_of("RC29") == "RC"
+    assert V.family_of("STF12") == "STF"
+    assert V.family_of("TB1") == "TB"
+    assert V.family_of("PL4") == "PL"     # a different doc's marks derive the same way
+    assert V.family_of("123") == "?"
+
+
+def test_coverage_by_family_distribution():
+    fam = V.coverage_by_family(sample_records())
+    # C30A + C30B -> family C = 2 ; RC30 -> family RC = 1
+    assert fam["actual"] == {"C": 2, "RC": 1}
+    assert fam["n_distinct_marks"] == 3
+    assert not fam["errors"]  # no expected map supplied -> informational only
+
+
+def test_coverage_by_family_matches_expected_profile():
+    # expected map comes from the (per-source) fixture, NOT hardcoded in the core
+    profile = {"C": 2, "RC": 1}
+    rep = V.validate(sample_records(), expected_family_counts=profile)
+    assert rep["ok"], V.format_report(rep)
+
+
+def test_coverage_by_family_phantom_fails():
+    recs = sample_records()
+    # a BY-OTHERS phantom slips in as an extra family -> exact-count gate must fail
+    recs.append(_rec(part_mark="STUD1", assembly="STUD1", description="STUD1 / metal stud."))
+    rep = V.validate(recs, expected_family_counts={"C": 2, "RC": 1})
+    assert not rep["ok"]
+    assert any(e["type"] in ("FAMILY_UNEXPECTED", "TOTAL_COUNT_MISMATCH") for e in rep["errors"])
+
+
+def test_finish_inherited_is_info_not_failure():
+    recs = sample_records()
+    recs[1]["flags"] = ["FINISH_INHERITED"]
+    rep = V.validate(recs)
+    assert rep["ok"], "FINISH_INHERITED must not block"
+    assert any(i["type"] == "FLAG_FINISH_INHERITED" for i in rep["info"])
+    assert not any("FINISH_INHERITED" in e.get("type", "") for e in rep["errors"])
+
+
+def test_fastener_qty_unverified_is_info():
+    recs = sample_records()
+    recs.append(_rec(part_mark="SCR1", assembly="Fasteners", qty=0,
+                     flags=["FASTENER_QTY_UNVERIFIED"],
+                     description='SCR1 #12 x 3/4" Self-Tapping Anchor Screw / 16 GA SS / matching finish.'))
+    rep = V.validate(recs)
+    assert any(i["type"] == "FLAG_FASTENER_QTY_UNVERIFIED" for i in rep["info"])
+    # qty=0 on the fastener is a warning (missing qty), never a hard error
+    assert not any(e.get("type") == "FLAG_FASTENER_QTY_UNVERIFIED" for e in rep["errors"])
+
+
 def _run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     failed = 0
