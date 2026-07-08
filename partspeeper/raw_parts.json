@@ -1,0 +1,5819 @@
+[
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 16,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C12A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "14\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 16,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C12B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "31-1/4\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 17,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC1",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "14\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 17,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC2",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "28-1/4\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 17,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB1",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "14\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 17,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB2",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "28-1/4\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 18,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF1",
+  "schedule": {
+   "finish_code": null,
+   "x": "13-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 18,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF2",
+  "schedule": {
+   "finish_code": null,
+   "x": "30-7/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 18,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB1",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 18,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB2",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 18,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP1",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 18,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP2",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 19,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C17A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 19,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C17B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "28-1/16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 19,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C19A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 19,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C19B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "28-1/16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 20,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC3",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "16\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 20,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC4",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "25-1/8\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 20,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB3",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "16\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 20,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB4",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "25-1/8\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 21,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF3",
+  "schedule": {
+   "finish_code": null,
+   "x": "15-5/8\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 21,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF4",
+  "schedule": {
+   "finish_code": null,
+   "x": "27-11/16\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 21,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB3",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 21,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB4",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 21,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP3",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 21,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP4",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 22,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C21A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 22,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C21B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "28-1/16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 22,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C23A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 22,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C23B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "28-1/16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 23,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC5",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "16\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 23,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC6",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "25-1/8\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 23,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB5",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "16\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 23,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB6",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "25-1/8\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 24,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF5",
+  "schedule": {
+   "finish_code": null,
+   "x": "15-5/8\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 24,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF6",
+  "schedule": {
+   "finish_code": null,
+   "x": "27-11/16\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 24,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB5",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 24,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB6",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 24,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP5",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 24,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP6",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 25,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C22A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "15-3/4\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 25,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C22B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "51-5/8\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 26,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC7",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15-3/4\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 26,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC8",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "48-11/16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 26,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB7",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15-3/4\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 26,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB8",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "48-11/16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 27,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF7",
+  "schedule": {
+   "finish_code": null,
+   "x": "15-3/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 27,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF8",
+  "schedule": {
+   "finish_code": null,
+   "x": "51-1/4\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 27,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB7",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 27,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB8",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 27,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP7",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 27,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP8",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 28,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C6A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "15\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 28,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C6B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "29-5/8\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 28,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C11A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "15\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 28,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C11B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "29-5/8\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 29,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC9",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 29,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC10",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26-11/16\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 29,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB9",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 29,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB10",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26-11/16\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 30,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF9",
+  "schedule": {
+   "finish_code": null,
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 30,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF10",
+  "schedule": {
+   "finish_code": null,
+   "x": "29-1/4\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 30,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB9",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 30,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB10",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 30,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP9",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 30,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP10",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 31,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C14A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "15\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 31,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C14B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "29-5/8\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 32,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC11",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 32,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC12",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26-11/16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 32,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB11",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 32,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB12",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26-11/16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 33,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF11",
+  "schedule": {
+   "finish_code": null,
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 33,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF12",
+  "schedule": {
+   "finish_code": null,
+   "x": "29-1/4\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 33,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB11",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 33,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB12",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 33,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP11",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 33,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP12",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 34,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C32A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 34,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C32B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "31-1/4\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 35,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC13",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 35,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC14",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26-11/16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 35,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB13",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 35,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB14",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26-11/16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 36,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF13",
+  "schedule": {
+   "finish_code": null,
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 36,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF14",
+  "schedule": {
+   "finish_code": null,
+   "x": "29-1/4\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 36,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB13",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 36,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB14",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 36,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP13",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 36,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP14",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 37,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C10A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "14\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 37,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C10B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "31-1/4\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 38,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC15",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "14\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 38,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC16",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "28-1/4\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 38,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB15",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "14\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 38,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB16",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "28-1/4\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 39,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF15",
+  "schedule": {
+   "finish_code": null,
+   "x": "13-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 39,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF16",
+  "schedule": {
+   "finish_code": null,
+   "x": "30-7/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 39,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB15",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 39,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB16",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 39,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP15",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 39,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP16",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 40,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C8A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "15\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 40,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C8B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "29-5/8\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 41,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC17",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 41,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC18",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26-11/16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 41,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB17",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 41,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB18",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26-11/16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 42,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF17",
+  "schedule": {
+   "finish_code": null,
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 42,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF18",
+  "schedule": {
+   "finish_code": null,
+   "x": "29-1/4\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 42,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB17",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 42,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB18",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 42,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP17",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 42,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP18",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 43,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C7A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "10-1/2\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 43,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C7B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "39-1/16\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 44,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC19",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "10-1/2\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 44,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC20",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "36-1/8\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 44,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB19",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "10-1/2\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 44,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB20",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "36-1/8\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 45,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF19",
+  "schedule": {
+   "finish_code": null,
+   "x": "10-1/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 45,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF20",
+  "schedule": {
+   "finish_code": null,
+   "x": "38-11/16\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 45,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB19",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 45,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB20",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 45,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP19",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 45,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP20",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 46,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C16A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "10-1/2\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 46,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C16B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "42-3/16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 47,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC21",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "10-1/2",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 47,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC22",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "39-1/4\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 47,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB21",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "10-1/2",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 47,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB22",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "39-1/4\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 48,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF21",
+  "schedule": {
+   "finish_code": null,
+   "x": "10-1/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 48,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF22",
+  "schedule": {
+   "finish_code": null,
+   "x": "41-13/16\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 48,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB21",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 48,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB22",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 48,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP21",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 48,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP22",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 49,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C18A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "10-1/2\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 49,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C18B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "42-3/16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 49,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C20A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "10-1/2\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 49,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C20B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "42-3/16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 50,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC23",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "10-1/2\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 50,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC24",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "39-1/4\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 50,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB23",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "10-1/2\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 50,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB24",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "39-1/4\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 51,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF23",
+  "schedule": {
+   "finish_code": null,
+   "x": "10-1/8\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 51,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF24",
+  "schedule": {
+   "finish_code": null,
+   "x": "41-13/16\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 51,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB23",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 51,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB24",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 51,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP23",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 51,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP24",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 52,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C27A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 52,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C27B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 52,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C28A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 52,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C28B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 52,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C35A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 52,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C35B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 53,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC25",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "47-1/8\"",
+   "y": "6\"",
+   "qty": "06"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 53,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB25",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "47-1/8\"",
+   "y": "8\"",
+   "qty": "06"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 53,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF25",
+  "schedule": {
+   "finish_code": null,
+   "x": "49-13/16\"",
+   "y": "3/4\"",
+   "qty": "12"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 54,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB25",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 54,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB26",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 54,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP25",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 54,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP26",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 55,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C31A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "45-3/8\"",
+   "y": "108\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 55,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C31B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "45-3/8\"",
+   "y": "108\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 56,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC26",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "42-7/16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 56,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB26",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "42-7/16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 57,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB27",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 57,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB28",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 57,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP27",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 57,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP28",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 58,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C33A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "45-3/8\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 58,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C33B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "45-3/8\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 59,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC27",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "42-7/16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 59,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB27",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "42-7/16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 59,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF27",
+  "schedule": {
+   "finish_code": null,
+   "x": "44-15/16\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 60,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB29",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 60,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB30",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 60,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP29",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 60,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP30",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 61,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C34A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "45-3/8\"",
+   "y": "108\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 61,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C34B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "45-3/8\"",
+   "y": "108\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 62,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC28",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "42-7/16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 62,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB28",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "42-7/16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 62,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF28",
+  "schedule": {
+   "finish_code": null,
+   "x": "44-15/16\"",
+   "y": "3/4\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 63,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB31",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 63,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB32",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 63,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP31",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 63,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP32",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "2"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": null,
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 65,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C30A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 65,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C30B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "30-1/8\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 65,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C30C",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "30-1/8\"",
+   "y": "132\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 65,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C30D",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "30-1/8\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 66,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC29",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 66,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC30",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "28-11/16\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 66,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB29",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 66,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB30",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "28-11/16\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 67,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF29",
+  "schedule": {
+   "finish_code": null,
+   "x": "15-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 67,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF30",
+  "schedule": {
+   "finish_code": null,
+   "x": "29-3/4\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 67,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB33",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 67,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB34",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 67,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP33",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 67,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP34",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 70,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC31",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "19-1/2\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 70,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC32",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "27-7/8\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 70,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB31",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "19-1/2\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 70,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB32",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "27-7/8\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 71,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF31",
+  "schedule": {
+   "finish_code": null,
+   "x": "19-1/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 71,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF32",
+  "schedule": {
+   "finish_code": null,
+   "x": "28-15/16\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 71,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB35",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 71,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB36",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 71,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP35",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 71,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP36",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 72,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C13A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "22-1/2\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 72,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C13B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "50-1/16\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 73,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC33",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "22-1/2\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 73,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC34",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "47-1/8\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 73,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB33",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "22-1/2\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 73,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB34",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "47-1/8\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 74,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF33",
+  "schedule": {
+   "finish_code": null,
+   "x": "22-1/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 74,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF34",
+  "schedule": {
+   "finish_code": null,
+   "x": "49-15/16\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 74,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB37",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 74,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB38",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 74,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP37",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 74,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP38",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 75,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C29A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "15\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 75,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C29B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "53-3/16\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 76,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC35",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 76,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC36",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "50-1/4\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 76,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB35",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "15\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 76,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB36",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "50-1/4\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 77,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF35",
+  "schedule": {
+   "finish_code": null,
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 77,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF36",
+  "schedule": {
+   "finish_code": null,
+   "x": "52-3/4\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 77,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB39",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 77,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB40",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 77,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP39",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 77,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP40",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 78,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C25A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "19\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 78,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C25B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "50-1/8\"",
+   "y": "132\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 79,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC37",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "19\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 79,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC38",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "47-1/8\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 79,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB37",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "19\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 79,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB38",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "47-1/8\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 80,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF37",
+  "schedule": {
+   "finish_code": null,
+   "x": "18-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 80,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF38",
+  "schedule": {
+   "finish_code": null,
+   "x": "49-15/16\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 80,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB41",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 80,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB42",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 80,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP41",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 80,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP42",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 81,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C5A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "26\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 81,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C5B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "34-3/8\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 82,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC39",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 82,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC40",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "31-7/16\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 82,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB39",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "26\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 82,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB40",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "31-7/16\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 83,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF39",
+  "schedule": {
+   "finish_code": null,
+   "x": "25-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 83,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF40",
+  "schedule": {
+   "finish_code": null,
+   "x": "33-15/16\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 83,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB43",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 83,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB44",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 83,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP43",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 83,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP44",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 85,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C26A",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "18\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 85,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C26B",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "37-15/16\"",
+   "y": "108\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 85,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C26C",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "37-15/16\"",
+   "y": "108\"",
+   "qty": "01"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 85,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "COLUMN COVER",
+  "part_mark": "C26D",
+  "schedule": {
+   "finish_code": "MTL.1",
+   "x": "37-15/16\"",
+   "y": "108\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 86,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC41",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "18\"",
+   "y": "6\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 86,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED CAPITAL",
+  "part_mark": "RC42",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "36-7/16\"",
+   "y": "6\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 86,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB41",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "18\"",
+   "y": "8\"",
+   "qty": "02"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 86,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "RECESSED BASE",
+  "part_mark": "RB42",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "36-7/16\"",
+   "y": "8\"",
+   "qty": "04"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 87,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF41",
+  "schedule": {
+   "finish_code": null,
+   "x": "17-5/8\"",
+   "y": "3/4\"",
+   "qty": "4"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 87,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "STIFFENER",
+  "part_mark": "STF42",
+  "schedule": {
+   "finish_code": null,
+   "x": "37-1/2\"",
+   "y": "3/4\"",
+   "qty": "8"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 87,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB45",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 87,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "T-BAR",
+  "part_mark": "TB46",
+  "schedule": {
+   "finish_code": null,
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 87,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP45",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "8\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ },
+ {
+  "source_doc": "parts input.pdf",
+  "source_page": 87,
+  "sheet_id": null,
+  "cell_index": null,
+  "part_type_raw": "CAP",
+  "part_mark": "CP46",
+  "schedule": {
+   "finish_code": "SS.1",
+   "x": "2\"",
+   "y": "6\"",
+   "qty": "6"
+  },
+  "finish_legend": {
+   "MTL.1": "STAINLESS STEEL 5WL TEXTURE",
+   "SS.1": "BRUSHED STAINLESS STEEL NO: 4 FINISHED"
+  },
+  "material_hint": "16 GA SS",
+  "notes_raw": [],
+  "raw_tokens": []
+ }
+]
