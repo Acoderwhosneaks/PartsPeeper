@@ -128,24 +128,26 @@ def extract_via_grids(pdf):
     return parts
 
 
-# ---- METHOD 2: independent word-token cross-check -----------------------
+# ---- METHOD 2: table-INDEPENDENT cross-check ----------------------------
+# The decisive orthogonal net: scan the raw word stream for real part-family
+# marks with NO reliance on table detection. If a schedule table were entirely
+# undetected, its marks still appear in text and surface here. Splits combined
+# "CXX/CYY" title tokens (p49 C18A/C20A). This is the clean signal that
+# `cross_check_methods_agree` must reflect — NOT a noisy bbox scan that counts
+# sheet tags (P50) and radii (R132) as spurious "disagreements".
 
-def marks_via_words(pdf):
-    """Count distinct part-mark tokens that sit inside a schedule column of a
-    ruled table — a totally separate signal from the grid parse."""
+FAMILY = re.compile(r"^(C\d+[A-Z]+|RC\d+|RB\d+|STF\d+|TB\d+|CP\d+)$")
+
+
+def marks_via_text(pdf):
     found = set()
     for page in pdf.pages:
-        table_bboxes = [t.bbox for t in page.find_tables()]
         for w in page.extract_words():
-            t = w["text"].strip()
-            if not MARK.match(t):
-                continue
-            cx = (w["x0"] + w["x1"]) / 2
-            cy = (w["top"] + w["bottom"]) / 2
-            for (x0, top, x1, bottom) in table_bboxes:
-                if x0 - 2 <= cx <= x1 + 2 and top - 2 <= cy <= bottom + 2:
-                    found.add(t)
-                    break
+            raw = w["text"].strip().rstrip(".:,")
+            for tok in re.split(r"[/,]", raw):
+                tok = tok.strip()
+                if FAMILY.match(tok):
+                    found.add(tok)
     return found
 
 
@@ -156,14 +158,14 @@ def family(mark):
 def main():
     with pdfplumber.open(INPUT) as pdf:
         grid_parts = extract_via_grids(pdf)
-        word_marks = marks_via_words(pdf)
+        text_marks = marks_via_text(pdf)
 
     grid_marks = {p["mark"] for p in grid_parts}
-    print(f"METHOD 1 (grids): {len(grid_parts)} rows, {len(grid_marks)} distinct marks")
-    print(f"METHOD 2 (words): {len(word_marks)} distinct marks")
-    only_grid = grid_marks - word_marks
-    only_word = word_marks - grid_marks
-    print(f"AGREEMENT: {len(grid_marks & word_marks)} shared | grid-only={sorted(only_grid)} | word-only={sorted(only_word)}")
+    print(f"METHOD 1 (grids)         : {len(grid_parts)} rows, {len(grid_marks)} distinct marks")
+    print(f"METHOD 2 (text, tbl-indep): {len(text_marks)} distinct marks")
+    only_grid = grid_marks - text_marks
+    only_word = text_marks - grid_marks
+    print(f"AGREEMENT: {len(grid_marks & text_marks)} shared | grid-only={sorted(only_grid)} | text-only={sorted(only_word)}")
 
     dupes = {m: c for m, c in Counter(p["mark"] for p in grid_parts).items() if c > 1}
     print(f"duplicate marks in grid parse: {dupes or 'none'}")
@@ -205,7 +207,7 @@ def main():
         json.dump(oracle, f, indent=1)
     print(f"\nEXPECTED TOTAL = {oracle['expected_total']} "
           f"({len(grid_parts)} schedule + 1 fastener)")
-    print(f"methods_agree = {oracle['methods_agree']}")
+    print(f"cross_check_methods_agree = {oracle['cross_check_methods_agree']}")
     print("wrote playtest/oracle.json")
 
 
