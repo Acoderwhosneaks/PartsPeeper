@@ -281,6 +281,23 @@ def test_real_oracle_json_is_self_consistent():
     assert V.family_of(real["fastener_mark"]) in fam
 
 
+def test_self_consistency_tolerates_both_family_conventions():
+    # oracle churn: expected_by_family may be schedule-only (282) OR all-marks incl
+    # the fastener (283, phobos v1.2). Both must pass; a real miscount must still fail.
+    base = {
+        "expected_total": 5,
+        "expected_schedule_total": 4,
+        "expected_marks": ["C1", "C2", "C3", "C4", "SCREW-1"],
+        "fastener_mark": "SCREW-1",
+    }
+    schedule_only = {**base, "expected_by_family": {"C": 4}}
+    all_marks = {**base, "expected_by_family": {"C": 4, "SCREW": 1}}
+    wrong = {**base, "expected_by_family": {"C": 3, "SCREW": 1}}   # real miscount
+    assert V.oracle_self_consistency(schedule_only) == []
+    assert V.oracle_self_consistency(all_marks) == []
+    assert V.oracle_self_consistency(wrong) != []
+
+
 def _oracle(parts, cross=True):
     marks = [p["mark"] for p in parts]
     fam = {}

@@ -244,20 +244,39 @@ def oracle_self_consistency(oracle):
     fasteners = _fastener_marks(oracle)
     schedule_marks = {m for m in marks if m not in fasteners}
 
+    def _fams(mset):
+        d = {}
+        for m in mset:
+            d[family_of(m)] = d.get(family_of(m), 0) + 1
+        return d
+
+    fam_all = _fams(marks)                 # all 283 (incl fastener family)
+    fam_sched = _fams(schedule_marks)      # 282 (schedule only)
+
     sched_total = oracle.get("expected_schedule_total")
     if sched_total is not None and int(sched_total) != len(schedule_marks):
         problems.append(
             f"expected_schedule_total={sched_total} != schedule marks={len(schedule_marks)}")
 
+    # expected_by_family: tolerate BOTH conventions in play across oracle versions —
+    # schedule-only (282, v1.1/on-main) OR all-marks-incl-fastener (283, phobos v1.2).
+    # Consistent if it matches EITHER basis; they differ only by the 1 fastener family,
+    # so a real family miscount is still caught (matches neither).
     by_fam = oracle.get("expected_by_family")
     if isinstance(by_fam, dict) and by_fam:
-        derived = {}
-        for m in schedule_marks:
-            derived[family_of(m)] = derived.get(family_of(m), 0) + 1
         stated = {str(k).upper(): int(v) for k, v in by_fam.items()}
-        if derived != stated:
+        if stated != fam_sched and stated != fam_all:
             problems.append(
-                f"expected_by_family {stated} != schedule-only families {derived}")
+                f"expected_by_family {stated} matches neither schedule-only "
+                f"{fam_sched} nor all-marks {fam_all}")
+
+    # explicit schedule-only map, when the oracle carries one, must be schedule-only.
+    sched_fam = oracle.get("expected_schedule_by_family")
+    if isinstance(sched_fam, dict) and sched_fam:
+        stated_s = {str(k).upper(): int(v) for k, v in sched_fam.items()}
+        if stated_s != fam_sched:
+            problems.append(
+                f"expected_schedule_by_family {stated_s} != schedule-only families {fam_sched}")
     return problems
 
 
