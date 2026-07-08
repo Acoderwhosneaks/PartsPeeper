@@ -179,7 +179,23 @@ def expected_from_oracle(oracle):
     stays pure and testable. Returns the exact set of marks the independent oracle
     says must exist, plus their per-family distribution, ready to feed straight
     into validate(records, expected_marks=..., expected_family_counts=...).
+
+    Prefers phobos's explicit oracle schema (v1.1): an `expected_marks` list plus an
+    optional `expected_by_family` map — those are the oracle's OWN authoritative
+    numbers (they include parts whose qty/finish it recovered from page text, e.g.
+    STF26). Falls back to iterating a parts list / mark-keyed dict otherwise.
     """
+    if isinstance(oracle, dict) and oracle.get("expected_marks") is not None:
+        marks = {str(m).strip() for m in oracle["expected_marks"] if str(m).strip()}
+        fam = oracle.get("expected_by_family")
+        if isinstance(fam, dict) and fam:
+            fam_counts = {str(k).upper(): int(v) for k, v in fam.items()}
+        else:
+            fam_counts = {}
+            for m in marks:
+                fam_counts[family_of(m)] = fam_counts.get(family_of(m), 0) + 1
+        return marks, fam_counts
+
     marks = set()
     for part in _oracle_iter_parts(oracle):
         m = _oracle_mark(part)
@@ -189,6 +205,31 @@ def expected_from_oracle(oracle):
     for m in marks:
         fam_counts[family_of(m)] = fam_counts.get(family_of(m), 0) + 1
     return marks, fam_counts
+
+
+def oracle_self_consistency(oracle):
+    """Sanity-check the oracle's own internal numbers before trusting it as truth.
+
+    Returns a list of problem strings (empty = consistent). Guards against an
+    oracle whose expected_total / expected_by_family / expected_marks disagree —
+    a mismatch there would silently mis-set the acceptance bar.
+    """
+    problems = []
+    if not isinstance(oracle, dict):
+        return problems
+    marks, fam = expected_from_oracle(oracle)
+    total = oracle.get("expected_total")
+    if total is not None and int(total) != len(marks):
+        problems.append(f"expected_total={total} != len(expected_marks)={len(marks)}")
+    by_fam = oracle.get("expected_by_family")
+    if isinstance(by_fam, dict) and by_fam:
+        derived = {}
+        for m in marks:
+            derived[family_of(m)] = derived.get(family_of(m), 0) + 1
+        stated = {str(k).upper(): int(v) for k, v in by_fam.items()}
+        if derived != stated:
+            problems.append(f"expected_by_family {stated} != families derived from marks {derived}")
+    return problems
 
 
 def validate_against_oracle(records, oracle):

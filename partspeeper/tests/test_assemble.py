@@ -187,8 +187,11 @@ def test_fastener_qty_unverified_is_info():
 # dropped part hide inside its own baseline (the seq35 '277/C60' number did
 # exactly that and false-passed the C24A-D drop on p69). The acceptance count
 # must come from an independent source; D's gate only consumes it.
-MIAMI_FAMILY_ACCEPTANCE = {"C": 64, "CP": 46, "TB": 46, "RC": 42, "RB": 42, "STF": 41}
-#                          281 ruled-schedule parts  (+1 fastener, family 'SCR' = 282 total)
+MIAMI_FAMILY_ACCEPTANCE = {"C": 64, "CP": 46, "TB": 46, "RC": 42, "RB": 42, "STF": 42}
+#              282 ruled-schedule parts (+1 fastener 'SCR' = 283 total) — oracle v1.1.
+#  History: 277/C60(stale seed) -> 281/STF41 (C24A-D merged-cell drop, seq64)
+#           -> 282/STF42 (STF26 missing-QTY-column drop, seq70). Number tracks the
+#           oracle, never the pipeline.
 
 
 def _marks_for(counts):
@@ -207,7 +210,7 @@ def test_family_gate_passes_on_full_oracle_count():
     recs = _marks_for(MIAMI_FAMILY_ACCEPTANCE)
     rep = V.validate(recs, expected_family_counts=MIAMI_FAMILY_ACCEPTANCE)
     assert rep["ok"], V.format_report(rep)
-    assert rep["coverage_by_family"]["n_distinct_marks"] == 281
+    assert rep["coverage_by_family"]["n_distinct_marks"] == 282  # 283 - 1 fastener (not in this map)
 
 
 def test_family_gate_catches_c24_style_drop():
@@ -222,7 +225,7 @@ def test_family_gate_catches_c24_style_drop():
     fam_errs = rep["coverage_by_family"]["errors"]
     assert any(e["type"] == "FAMILY_COUNT_MISMATCH" and e["family"] == "C"
                and e["expected"] == 64 and e["actual"] == 60 for e in fam_errs)
-    assert any(e["type"] == "TOTAL_COUNT_MISMATCH" and e["actual"] == 277 for e in fam_errs)
+    assert any(e["type"] == "TOTAL_COUNT_MISMATCH" and e["actual"] == 278 for e in fam_errs)  # 282 - 4
 
 
 def test_expected_from_oracle_tolerates_shapes():
@@ -234,6 +237,30 @@ def test_expected_from_oracle_tolerates_shapes():
         marks, fams = V.expected_from_oracle(oracle)
         assert marks == {"C1", "C2", "RC1"}
         assert fams == {"C": 2, "RC": 1}
+
+
+def test_expected_from_oracle_explicit_schema():
+    # phobos oracle v1.1 shape: explicit expected_marks + expected_by_family
+    oracle = {
+        "expected_total": 5,
+        "expected_marks": ["C24A", "C24B", "C24C", "C24D", "STF26"],
+        "expected_by_family": {"C": 4, "STF": 1},
+    }
+    marks, fam = V.expected_from_oracle(oracle)
+    assert marks == {"C24A", "C24B", "C24C", "C24D", "STF26"}
+    assert fam == {"C": 4, "STF": 1}          # taken from oracle's own numbers
+    assert V.oracle_self_consistency(oracle) == []
+
+
+def test_oracle_self_consistency_flags_internal_mismatch():
+    bad = {
+        "expected_total": 6,                   # lies: only 5 marks
+        "expected_marks": ["C1", "C2", "C3", "C4", "STF1"],
+        "expected_by_family": {"C": 4, "STF": 2},   # lies: STF is 1
+    }
+    problems = V.oracle_self_consistency(bad)
+    assert any("expected_total" in p for p in problems)
+    assert any("expected_by_family" in p for p in problems)
 
 
 def test_validate_against_oracle_catches_dropped_mark():
