@@ -8,6 +8,7 @@ Fixtures are synthetic PartRecords shaped exactly like ../part_contract.md, usin
 the Miami input example the team scouted (C30 column: segments C30A..C30D +
 recessed capital/base RC30/RB30).
 """
+import json
 import os
 import sys
 
@@ -256,11 +257,28 @@ def test_oracle_self_consistency_flags_internal_mismatch():
     bad = {
         "expected_total": 6,                   # lies: only 5 marks
         "expected_marks": ["C1", "C2", "C3", "C4", "STF1"],
+        "expected_schedule_total": 5,
         "expected_by_family": {"C": 4, "STF": 2},   # lies: STF is 1
     }
     problems = V.oracle_self_consistency(bad)
     assert any("expected_total" in p for p in problems)
     assert any("expected_by_family" in p for p in problems)
+
+
+def test_real_oracle_json_is_self_consistent():
+    # ceres seq78: the synthetic fixture missed the schedule/fastener split.
+    # expected_by_family is SCHEDULE-ONLY (282); expected_marks includes the
+    # fastener (283). Loading the REAL oracle must NOT false-flag.
+    path = os.path.join(os.path.dirname(__file__), "..", "..", "playtest", "oracle.json")
+    with open(path, encoding="utf-8") as fh:
+        real = json.load(fh)
+    assert V.oracle_self_consistency(real) == [], V.oracle_self_consistency(real)
+    marks, fam = V.expected_from_oracle(real)
+    assert len(marks) == 283                       # full set incl fastener
+    # coverage family map (from ALL marks) carries the fastener family so a
+    # complete 283-part pipeline won't be false-flagged as UNEXPECTED
+    assert sum(fam.values()) == 283
+    assert V.family_of(real["fastener_mark"]) in fam
 
 
 def _oracle(parts, cross=True):

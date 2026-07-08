@@ -180,55 +180,84 @@ def expected_from_oracle(oracle):
     says must exist, plus their per-family distribution, ready to feed straight
     into validate(records, expected_marks=..., expected_family_counts=...).
 
-    Prefers phobos's explicit oracle schema (v1.1): an `expected_marks` list plus an
-    optional `expected_by_family` map — those are the oracle's OWN authoritative
-    numbers (they include parts whose qty/finish it recovered from page text, e.g.
-    STF26). Falls back to iterating a parts list / mark-keyed dict otherwise.
+    Uses phobos's explicit oracle schema (v1.1): the full `expected_marks` list
+    (283 = 282 schedule + 1 fastener). The returned family map is derived from ALL
+    marks — including the fastener family — so it matches what a COMPLETE pipeline
+    emits (which includes the fastener row). NOTE: the oracle's `expected_by_family`
+    is a SCHEDULE-ONLY subtotal (excludes the fastener) and is deliberately NOT used
+    as the coverage map here; it is only cross-checked in oracle_self_consistency().
     """
     if isinstance(oracle, dict) and oracle.get("expected_marks") is not None:
         marks = {str(m).strip() for m in oracle["expected_marks"] if str(m).strip()}
-        fam = oracle.get("expected_by_family")
-        if isinstance(fam, dict) and fam:
-            fam_counts = {str(k).upper(): int(v) for k, v in fam.items()}
-        else:
-            fam_counts = {}
-            for m in marks:
-                fam_counts[family_of(m)] = fam_counts.get(family_of(m), 0) + 1
-        return marks, fam_counts
-
-    marks = set()
-    for part in _oracle_iter_parts(oracle):
-        m = _oracle_mark(part)
-        if m:
-            marks.add(m)
+    else:
+        marks = set()
+        for part in _oracle_iter_parts(oracle):
+            m = _oracle_mark(part)
+            if m:
+                marks.add(m)
     fam_counts: dict[str, int] = {}
     for m in marks:
         fam_counts[family_of(m)] = fam_counts.get(family_of(m), 0) + 1
     return marks, fam_counts
 
 
+def _fastener_marks(oracle) -> set:
+    """Marks the oracle classifies as fasteners (tracked separately from the
+    schedule families). Sourced from `fastener_mark` / `fastener_marks` /
+    `fastener_parts`. Empty set if the oracle has no fastener section."""
+    out = set()
+    if not isinstance(oracle, dict):
+        return out
+    fm = oracle.get("fastener_mark")
+    if fm:
+        out.add(str(fm).strip())
+    fl = oracle.get("fastener_marks")
+    if isinstance(fl, list):
+        out |= {str(x).strip() for x in fl if str(x).strip()}
+    fp = oracle.get("fastener_parts")
+    if isinstance(fp, list):
+        for p in fp:
+            m = _oracle_mark(p)
+            if m:
+                out.add(m)
+    return out
+
+
 def oracle_self_consistency(oracle):
     """Sanity-check the oracle's own internal numbers before trusting it as truth.
 
-    Returns a list of problem strings (empty = consistent). Guards against an
-    oracle whose expected_total / expected_by_family / expected_marks disagree —
-    a mismatch there would silently mis-set the acceptance bar.
+    Returns a list of problem strings (empty = consistent). The oracle splits its
+    counts: `expected_total` (all marks) vs `expected_schedule_total` +
+    `expected_by_family` (SCHEDULE parts only; the fastener is tracked separately
+    via `fastener_mark`/`fastener_parts`). So we compare expected_by_family against
+    SCHEDULE-only families (all marks minus the fastener marks) — comparing it to
+    all-mark families would false-flag the legitimately-separate fastener.
     """
     problems = []
     if not isinstance(oracle, dict):
         return problems
-    marks, fam = expected_from_oracle(oracle)
+    marks, _ = expected_from_oracle(oracle)
     total = oracle.get("expected_total")
     if total is not None and int(total) != len(marks):
         problems.append(f"expected_total={total} != len(expected_marks)={len(marks)}")
+
+    fasteners = _fastener_marks(oracle)
+    schedule_marks = {m for m in marks if m not in fasteners}
+
+    sched_total = oracle.get("expected_schedule_total")
+    if sched_total is not None and int(sched_total) != len(schedule_marks):
+        problems.append(
+            f"expected_schedule_total={sched_total} != schedule marks={len(schedule_marks)}")
+
     by_fam = oracle.get("expected_by_family")
     if isinstance(by_fam, dict) and by_fam:
         derived = {}
-        for m in marks:
+        for m in schedule_marks:
             derived[family_of(m)] = derived.get(family_of(m), 0) + 1
         stated = {str(k).upper(): int(v) for k, v in by_fam.items()}
         if derived != stated:
-            problems.append(f"expected_by_family {stated} != families derived from marks {derived}")
+            problems.append(
+                f"expected_by_family {stated} != schedule-only families {derived}")
     return problems
 
 
