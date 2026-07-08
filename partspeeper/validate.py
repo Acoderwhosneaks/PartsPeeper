@@ -179,23 +179,153 @@ def expected_from_oracle(oracle):
     stays pure and testable. Returns the exact set of marks the independent oracle
     says must exist, plus their per-family distribution, ready to feed straight
     into validate(records, expected_marks=..., expected_family_counts=...).
+
+    Uses phobos's explicit oracle schema (v1.1): the full `expected_marks` list
+    (283 = 282 schedule + 1 fastener). The returned family map is derived from ALL
+    marks — including the fastener family — so it matches what a COMPLETE pipeline
+    emits (which includes the fastener row). NOTE: the oracle's `expected_by_family`
+    is a SCHEDULE-ONLY subtotal (excludes the fastener) and is deliberately NOT used
+    as the coverage map here; it is only cross-checked in oracle_self_consistency().
     """
-    marks = set()
-    for part in _oracle_iter_parts(oracle):
-        m = _oracle_mark(part)
-        if m:
-            marks.add(m)
+    if isinstance(oracle, dict) and oracle.get("expected_marks") is not None:
+        marks = {str(m).strip() for m in oracle["expected_marks"] if str(m).strip()}
+    else:
+        marks = set()
+        for part in _oracle_iter_parts(oracle):
+            m = _oracle_mark(part)
+            if m:
+                marks.add(m)
     fam_counts: dict[str, int] = {}
     for m in marks:
         fam_counts[family_of(m)] = fam_counts.get(family_of(m), 0) + 1
     return marks, fam_counts
 
 
-def validate_against_oracle(records, oracle):
+def _fastener_marks(oracle) -> set:
+    """Marks the oracle classifies as fasteners (tracked separately from the
+    schedule families). Sourced from `fastener_mark` / `fastener_marks` /
+    `fastener_parts`. Empty set if the oracle has no fastener section."""
+    out = set()
+    if not isinstance(oracle, dict):
+        return out
+    fm = oracle.get("fastener_mark")
+    if fm:
+        out.add(str(fm).strip())
+    fl = oracle.get("fastener_marks")
+    if isinstance(fl, list):
+        out |= {str(x).strip() for x in fl if str(x).strip()}
+    fp = oracle.get("fastener_parts")
+    if isinstance(fp, list):
+        for p in fp:
+            m = _oracle_mark(p)
+            if m:
+                out.add(m)
+    return out
+
+
+def oracle_self_consistency(oracle):
+    """Sanity-check the oracle's own internal numbers before trusting it as truth.
+
+    Returns a list of problem strings (empty = consistent). The oracle splits its
+    counts: `expected_total` (all marks) vs `expected_schedule_total` +
+    `expected_by_family` (SCHEDULE parts only; the fastener is tracked separately
+    via `fastener_mark`/`fastener_parts`). So we compare expected_by_family against
+    SCHEDULE-only families (all marks minus the fastener marks) — comparing it to
+    all-mark families would false-flag the legitimately-separate fastener.
+    """
+    problems = []
+    if not isinstance(oracle, dict):
+        return problems
+    marks, _ = expected_from_oracle(oracle)
+    total = oracle.get("expected_total")
+    if total is not None and int(total) != len(marks):
+        problems.append(f"expected_total={total} != len(expected_marks)={len(marks)}")
+
+    fasteners = _fastener_marks(oracle)
+    schedule_marks = {m for m in marks if m not in fasteners}
+
+    def _fams(mset):
+        d = {}
+        for m in mset:
+            d[family_of(m)] = d.get(family_of(m), 0) + 1
+        return d
+
+    fam_all = _fams(marks)                 # all 283 (incl fastener family)
+    fam_sched = _fams(schedule_marks)      # 282 (schedule only)
+
+    sched_total = oracle.get("expected_schedule_total")
+    if sched_total is not None and int(sched_total) != len(schedule_marks):
+        problems.append(
+            f"expected_schedule_total={sched_total} != schedule marks={len(schedule_marks)}")
+
+    # expected_by_family: tolerate BOTH conventions in play across oracle versions —
+    # schedule-only (282, v1.1/on-main) OR all-marks-incl-fastener (283, phobos v1.2).
+    # Consistent if it matches EITHER basis; they differ only by the 1 fastener family,
+    # so a real family miscount is still caught (matches neither).
+    by_fam = oracle.get("expected_by_family")
+    if isinstance(by_fam, dict) and by_fam:
+        stated = {str(k).upper(): int(v) for k, v in by_fam.items()}
+        if stated != fam_sched and stated != fam_all:
+            problems.append(
+                f"expected_by_family {stated} matches neither schedule-only "
+                f"{fam_sched} nor all-marks {fam_all}")
+
+    # explicit schedule-only map, when the oracle carries one, must be schedule-only.
+    sched_fam = oracle.get("expected_schedule_by_family")
+    if isinstance(sched_fam, dict) and sched_fam:
+        stated_s = {str(k).upper(): int(v) for k, v in sched_fam.items()}
+        if stated_s != fam_sched:
+            problems.append(
+                f"expected_schedule_by_family {stated_s} != schedule-only families {fam_sched}")
+    return problems
+
+
+def oracle_is_cross_validated(oracle) -> bool:
+    """True only if the oracle asserts its own methods agree.
+
+    ceres seq73 locked this: a provisional (single-method / not-yet-reconciled)
+    count is NOT acceptance truth. The oracle publishes `cross_check_methods_agree`;
+    absent the flag we treat it as NOT cross-validated (fail closed).
+    """
+    if isinstance(oracle, dict):
+        return oracle.get("cross_check_methods_agree") is True
+    return False
+
+
+def validate_against_oracle(records, oracle, *, require_cross_validated=True):
     """Full [D] validation with the acceptance target sourced from the oracle,
-    reconciling MARK-BY-MARK (not just totals) per ceres seq65."""
+    reconciling MARK-BY-MARK (not just totals) per ceres seq65.
+
+    Completeness can only be CERTIFIED against a cross-validated oracle (seq73).
+    If the oracle is provisional (cross_check_methods_agree != True) or internally
+    inconsistent, the report is forced to not-ok with an ORACLE_NOT_CROSS_VALIDATED
+    / ORACLE_INCONSISTENT error — the gate refuses to bless a number the oracle
+    itself hasn't reconciled. Pass require_cross_validated=False only for a
+    provisional dry-run (clearly labelled), never for a completeness sign-off.
+    """
     marks, fam_counts = expected_from_oracle(oracle)
-    return validate(records, expected_marks=marks, expected_family_counts=fam_counts)
+    rep = validate(records, expected_marks=marks, expected_family_counts=fam_counts)
+
+    inconsistencies = oracle_self_consistency(oracle)
+    cross_ok = oracle_is_cross_validated(oracle)
+    rep["oracle"] = {
+        "cross_validated": cross_ok,
+        "self_consistency": inconsistencies,
+        "n_expected_marks": len(marks),
+        "provisional": not cross_ok,
+    }
+    gate_errors = []
+    for problem in inconsistencies:
+        gate_errors.append({"type": "ORACLE_INCONSISTENT", "detail": problem})
+    if require_cross_validated and not cross_ok:
+        gate_errors.append({
+            "type": "ORACLE_NOT_CROSS_VALIDATED",
+            "detail": "oracle.cross_check_methods_agree is not True — acceptance "
+                      "count is PROVISIONAL; completeness cannot be certified (seq73)."})
+    if gate_errors:
+        rep["errors"] = gate_errors + rep["errors"]
+        rep["ok"] = False
+    return rep
 
 
 def _tokens_present(haystack: str, token) -> bool:

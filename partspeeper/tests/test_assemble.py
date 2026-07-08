@@ -8,6 +8,7 @@ Fixtures are synthetic PartRecords shaped exactly like ../part_contract.md, usin
 the Miami input example the team scouted (C30 column: segments C30A..C30D +
 recessed capital/base RC30/RB30).
 """
+import json
 import os
 import sys
 
@@ -187,8 +188,11 @@ def test_fastener_qty_unverified_is_info():
 # dropped part hide inside its own baseline (the seq35 '277/C60' number did
 # exactly that and false-passed the C24A-D drop on p69). The acceptance count
 # must come from an independent source; D's gate only consumes it.
-MIAMI_FAMILY_ACCEPTANCE = {"C": 64, "CP": 46, "TB": 46, "RC": 42, "RB": 42, "STF": 41}
-#                          281 ruled-schedule parts  (+1 fastener, family 'SCR' = 282 total)
+MIAMI_FAMILY_ACCEPTANCE = {"C": 64, "CP": 46, "TB": 46, "RC": 42, "RB": 42, "STF": 42}
+#              282 ruled-schedule parts (+1 fastener 'SCR' = 283 total) — oracle v1.1.
+#  History: 277/C60(stale seed) -> 281/STF41 (C24A-D merged-cell drop, seq64)
+#           -> 282/STF42 (STF26 missing-QTY-column drop, seq70). Number tracks the
+#           oracle, never the pipeline.
 
 
 def _marks_for(counts):
@@ -207,7 +211,7 @@ def test_family_gate_passes_on_full_oracle_count():
     recs = _marks_for(MIAMI_FAMILY_ACCEPTANCE)
     rep = V.validate(recs, expected_family_counts=MIAMI_FAMILY_ACCEPTANCE)
     assert rep["ok"], V.format_report(rep)
-    assert rep["coverage_by_family"]["n_distinct_marks"] == 281
+    assert rep["coverage_by_family"]["n_distinct_marks"] == 282  # 283 - 1 fastener (not in this map)
 
 
 def test_family_gate_catches_c24_style_drop():
@@ -222,7 +226,7 @@ def test_family_gate_catches_c24_style_drop():
     fam_errs = rep["coverage_by_family"]["errors"]
     assert any(e["type"] == "FAMILY_COUNT_MISMATCH" and e["family"] == "C"
                and e["expected"] == 64 and e["actual"] == 60 for e in fam_errs)
-    assert any(e["type"] == "TOTAL_COUNT_MISMATCH" and e["actual"] == 277 for e in fam_errs)
+    assert any(e["type"] == "TOTAL_COUNT_MISMATCH" and e["actual"] == 278 for e in fam_errs)  # 282 - 4
 
 
 def test_expected_from_oracle_tolerates_shapes():
@@ -236,13 +240,80 @@ def test_expected_from_oracle_tolerates_shapes():
         assert fams == {"C": 2, "RC": 1}
 
 
+def test_expected_from_oracle_explicit_schema():
+    # phobos oracle v1.1 shape: explicit expected_marks + expected_by_family
+    oracle = {
+        "expected_total": 5,
+        "expected_marks": ["C24A", "C24B", "C24C", "C24D", "STF26"],
+        "expected_by_family": {"C": 4, "STF": 1},
+    }
+    marks, fam = V.expected_from_oracle(oracle)
+    assert marks == {"C24A", "C24B", "C24C", "C24D", "STF26"}
+    assert fam == {"C": 4, "STF": 1}          # taken from oracle's own numbers
+    assert V.oracle_self_consistency(oracle) == []
+
+
+def test_oracle_self_consistency_flags_internal_mismatch():
+    bad = {
+        "expected_total": 6,                   # lies: only 5 marks
+        "expected_marks": ["C1", "C2", "C3", "C4", "STF1"],
+        "expected_schedule_total": 5,
+        "expected_by_family": {"C": 4, "STF": 2},   # lies: STF is 1
+    }
+    problems = V.oracle_self_consistency(bad)
+    assert any("expected_total" in p for p in problems)
+    assert any("expected_by_family" in p for p in problems)
+
+
+def test_real_oracle_json_is_self_consistent():
+    # ceres seq78: the synthetic fixture missed the schedule/fastener split.
+    # expected_by_family is SCHEDULE-ONLY (282); expected_marks includes the
+    # fastener (283). Loading the REAL oracle must NOT false-flag.
+    path = os.path.join(os.path.dirname(__file__), "..", "..", "playtest", "oracle.json")
+    with open(path, encoding="utf-8") as fh:
+        real = json.load(fh)
+    assert V.oracle_self_consistency(real) == [], V.oracle_self_consistency(real)
+    marks, fam = V.expected_from_oracle(real)
+    assert len(marks) == 283                       # full set incl fastener
+    # coverage family map (from ALL marks) carries the fastener family so a
+    # complete 283-part pipeline won't be false-flagged as UNEXPECTED
+    assert sum(fam.values()) == 283
+    assert V.family_of(real["fastener_mark"]) in fam
+
+
+def test_self_consistency_tolerates_both_family_conventions():
+    # oracle churn: expected_by_family may be schedule-only (282) OR all-marks incl
+    # the fastener (283, phobos v1.2). Both must pass; a real miscount must still fail.
+    base = {
+        "expected_total": 5,
+        "expected_schedule_total": 4,
+        "expected_marks": ["C1", "C2", "C3", "C4", "SCREW-1"],
+        "fastener_mark": "SCREW-1",
+    }
+    schedule_only = {**base, "expected_by_family": {"C": 4}}
+    all_marks = {**base, "expected_by_family": {"C": 4, "SCREW": 1}}
+    wrong = {**base, "expected_by_family": {"C": 3, "SCREW": 1}}   # real miscount
+    assert V.oracle_self_consistency(schedule_only) == []
+    assert V.oracle_self_consistency(all_marks) == []
+    assert V.oracle_self_consistency(wrong) != []
+
+
+def _oracle(parts, cross=True):
+    marks = [p["mark"] for p in parts]
+    fam = {}
+    for m in marks:
+        fam[V.family_of(m)] = fam.get(V.family_of(m), 0) + 1
+    return {"parts": parts, "expected_marks": marks, "expected_total": len(marks),
+            "expected_by_family": fam, "cross_check_methods_agree": cross}
+
+
 def test_validate_against_oracle_catches_dropped_mark():
     # phobos seq64/ceres seq65: reconcile MARK-BY-MARK, not just totals.
-    oracle = {"parts": [
+    oracle = _oracle([
         {"mark": "C24A", "qty": 2}, {"mark": "C24B", "qty": 1},
         {"mark": "C24C", "qty": 1}, {"mark": "C24D", "qty": 2},
         {"mark": "RC24", "qty": 1},
-    ]}
+    ])
     # pipeline dropped the 4 stacked-cell marks, emitted only RC24
     recs = [_rec(part_mark="RC24", assembly="RC24", dim_x='1"', dim_y='1"',
                  dim_dia=None, finish="", description='RC24 / cap / 1" x 1".')]
@@ -250,6 +321,36 @@ def test_validate_against_oracle_catches_dropped_mark():
     assert not rep["ok"]
     missing = {e["part_mark"] for e in rep["coverage"]["errors"] if e["type"] == "MISSING"}
     assert {"C24A", "C24B", "C24C", "C24D"} <= missing, "each dropped mark named individually"
+
+
+def test_provisional_oracle_cannot_certify_completeness():
+    # ceres seq73: cross_check_methods_agree=False -> gate refuses to certify,
+    # EVEN when every expected mark is present.
+    parts = [{"mark": "C1"}, {"mark": "C2"}, {"mark": "RC1"}]
+    recs = [_rec(part_mark=p["mark"], assembly=p["mark"], dim_x='1"', dim_y='1"',
+                 dim_dia=None, finish="", description=f'{p["mark"]} / p / 1" x 1".')
+            for p in parts]
+    prov = _oracle(parts, cross=False)
+    rep = V.validate_against_oracle(recs, prov)
+    assert not rep["ok"], "provisional oracle must not certify completeness"
+    assert any(e["type"] == "ORACLE_NOT_CROSS_VALIDATED" for e in rep["errors"])
+    assert rep["oracle"]["provisional"] is True
+    # same records + a cross-validated oracle -> clean pass
+    rep2 = V.validate_against_oracle(recs, _oracle(parts, cross=True))
+    assert rep2["ok"], V.format_report(rep2)
+    assert rep2["oracle"]["cross_validated"] is True
+
+
+def test_provisional_dry_run_opt_out():
+    parts = [{"mark": "C1"}, {"mark": "C2"}]
+    recs = [_rec(part_mark=p["mark"], assembly=p["mark"], dim_x='1"', dim_y='1"',
+                 dim_dia=None, finish="", description=f'{p["mark"]} / p / 1" x 1".')
+            for p in parts]
+    # explicit dry-run against a provisional oracle: allowed, but still labelled provisional
+    rep = V.validate_against_oracle(recs, _oracle(parts, cross=False),
+                                    require_cross_validated=False)
+    assert rep["ok"], "dry-run opt-out lets a provisional check pass"
+    assert rep["oracle"]["provisional"] is True
 
 
 def _run():
