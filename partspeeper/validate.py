@@ -128,6 +128,76 @@ def coverage_by_family(records: Iterable[Any],
     }
 
 
+# --- independent-oracle adapter ---------------------------------------------
+# ceres META RULE (seq65): completeness truth comes from the INDEPENDENT oracle
+# (e.g. phobos's playtest/oracle.json), NEVER the pipeline's own counts. We consume
+# the oracle's DATA output as the acceptance target; we import NONE of its code and
+# NONE of the pipeline's extractor — that is what keeps this gate an independent check.
+
+_ORACLE_MARK_KEYS = ("mark", "part_mark", "part_no", "partno", "part_number")
+
+
+def _oracle_iter_parts(oracle):
+    """Yield part dicts from an oracle in any of the tolerated shapes:
+      - {"parts": [ {...}, ... ]}   (wrapper with a parts/records list)
+      - [ {...}, ... ]              (bare list of part dicts)
+      - { "C24A": {...}, ... }      (dict keyed by mark)
+    """
+    if isinstance(oracle, dict):
+        for key in ("parts", "records", "expected", "items"):
+            if isinstance(oracle.get(key), list):
+                yield from oracle[key]
+                return
+        # dict keyed by mark -> synthesize {mark: key} if values lack a mark field
+        for mark, val in oracle.items():
+            if isinstance(val, dict):
+                d = dict(val)
+                if not any(k in d for k in _ORACLE_MARK_KEYS):
+                    d["mark"] = mark
+                yield d
+            else:
+                yield {"mark": mark}
+        return
+    if isinstance(oracle, list):
+        yield from oracle
+
+
+def _oracle_mark(part) -> str:
+    if isinstance(part, str):
+        return part.strip()
+    if isinstance(part, dict):
+        for k in _ORACLE_MARK_KEYS:
+            if part.get(k):
+                return str(part[k]).strip()
+    return ""
+
+
+def expected_from_oracle(oracle):
+    """Derive (expected_marks:set, expected_family_counts:dict) from the oracle.
+
+    `oracle` is already-parsed JSON (list/dict) — the caller owns file IO so this
+    stays pure and testable. Returns the exact set of marks the independent oracle
+    says must exist, plus their per-family distribution, ready to feed straight
+    into validate(records, expected_marks=..., expected_family_counts=...).
+    """
+    marks = set()
+    for part in _oracle_iter_parts(oracle):
+        m = _oracle_mark(part)
+        if m:
+            marks.add(m)
+    fam_counts: dict[str, int] = {}
+    for m in marks:
+        fam_counts[family_of(m)] = fam_counts.get(family_of(m), 0) + 1
+    return marks, fam_counts
+
+
+def validate_against_oracle(records, oracle):
+    """Full [D] validation with the acceptance target sourced from the oracle,
+    reconciling MARK-BY-MARK (not just totals) per ceres seq65."""
+    marks, fam_counts = expected_from_oracle(oracle)
+    return validate(records, expected_marks=marks, expected_family_counts=fam_counts)
+
+
 def _tokens_present(haystack: str, token) -> bool:
     if token in (None, "", "-"):
         return True

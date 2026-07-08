@@ -225,6 +225,33 @@ def test_family_gate_catches_c24_style_drop():
     assert any(e["type"] == "TOTAL_COUNT_MISMATCH" and e["actual"] == 277 for e in fam_errs)
 
 
+def test_expected_from_oracle_tolerates_shapes():
+    # bare list, wrapper dict, and mark-keyed dict all yield the same mark set
+    a = [{"mark": "C1"}, {"part_no": "C2"}, {"part_mark": "RC1"}]
+    b = {"parts": [{"mark": "C1"}, {"mark": "C2"}, {"mark": "RC1"}]}
+    c = {"C1": {"qty": 2}, "C2": {"qty": 1}, "RC1": {"qty": 1}}
+    for oracle in (a, b, c):
+        marks, fams = V.expected_from_oracle(oracle)
+        assert marks == {"C1", "C2", "RC1"}
+        assert fams == {"C": 2, "RC": 1}
+
+
+def test_validate_against_oracle_catches_dropped_mark():
+    # phobos seq64/ceres seq65: reconcile MARK-BY-MARK, not just totals.
+    oracle = {"parts": [
+        {"mark": "C24A", "qty": 2}, {"mark": "C24B", "qty": 1},
+        {"mark": "C24C", "qty": 1}, {"mark": "C24D", "qty": 2},
+        {"mark": "RC24", "qty": 1},
+    ]}
+    # pipeline dropped the 4 stacked-cell marks, emitted only RC24
+    recs = [_rec(part_mark="RC24", assembly="RC24", dim_x='1"', dim_y='1"',
+                 dim_dia=None, finish="", description='RC24 / cap / 1" x 1".')]
+    rep = V.validate_against_oracle(recs, oracle)
+    assert not rep["ok"]
+    missing = {e["part_mark"] for e in rep["coverage"]["errors"] if e["type"] == "MISSING"}
+    assert {"C24A", "C24B", "C24C", "C24D"} <= missing, "each dropped mark named individually"
+
+
 def _run():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     failed = 0
