@@ -1,0 +1,2280 @@
+{
+ "input": "parts input.pdf",
+ "schedule_parts": [
+  {
+   "mark": "C12A",
+   "page": 16,
+   "qty": "02",
+   "x": "14\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C12B",
+   "page": 16,
+   "qty": "02",
+   "x": "31-1/4\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC1",
+   "page": 17,
+   "qty": "02",
+   "x": "14\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC2",
+   "page": 17,
+   "qty": "02",
+   "x": "28-1/4\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB1",
+   "page": 17,
+   "qty": "02",
+   "x": "14\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB2",
+   "page": 17,
+   "qty": "02",
+   "x": "28-1/4\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF1",
+   "page": 18,
+   "qty": "4",
+   "x": "13-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF2",
+   "page": 18,
+   "qty": "4",
+   "x": "30-7/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB1",
+   "page": 18,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB2",
+   "page": 18,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP1",
+   "page": 18,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP2",
+   "page": 18,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C17A",
+   "page": 19,
+   "qty": "02",
+   "x": "16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C17B",
+   "page": 19,
+   "qty": "02",
+   "x": "28-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C19A",
+   "page": 19,
+   "qty": "02",
+   "x": "16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C19B",
+   "page": 19,
+   "qty": "02",
+   "x": "28-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC3",
+   "page": 20,
+   "qty": "04",
+   "x": "16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC4",
+   "page": 20,
+   "qty": "04",
+   "x": "25-1/8\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB3",
+   "page": 20,
+   "qty": "04",
+   "x": "16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB4",
+   "page": 20,
+   "qty": "04",
+   "x": "25-1/8\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF3",
+   "page": 21,
+   "qty": "8",
+   "x": "15-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF4",
+   "page": 21,
+   "qty": "8",
+   "x": "27-11/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB3",
+   "page": 21,
+   "qty": "8",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB4",
+   "page": 21,
+   "qty": "8",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP3",
+   "page": 21,
+   "qty": "8",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP4",
+   "page": 21,
+   "qty": "8",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C21A",
+   "page": 22,
+   "qty": "02",
+   "x": "16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C21B",
+   "page": 22,
+   "qty": "02",
+   "x": "28-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C23A",
+   "page": 22,
+   "qty": "02",
+   "x": "16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C23B",
+   "page": 22,
+   "qty": "02",
+   "x": "28-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC5",
+   "page": 23,
+   "qty": "04",
+   "x": "16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC6",
+   "page": 23,
+   "qty": "04",
+   "x": "25-1/8\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB5",
+   "page": 23,
+   "qty": "04",
+   "x": "16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB6",
+   "page": 23,
+   "qty": "04",
+   "x": "25-1/8\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF5",
+   "page": 24,
+   "qty": "8",
+   "x": "15-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF6",
+   "page": 24,
+   "qty": "8",
+   "x": "27-11/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB5",
+   "page": 24,
+   "qty": "8",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB6",
+   "page": 24,
+   "qty": "8",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP5",
+   "page": 24,
+   "qty": "8",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP6",
+   "page": 24,
+   "qty": "8",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C22A",
+   "page": 25,
+   "qty": "02",
+   "x": "15-3/4\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C22B",
+   "page": 25,
+   "qty": "02",
+   "x": "51-5/8\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC7",
+   "page": 26,
+   "qty": "02",
+   "x": "15-3/4\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC8",
+   "page": 26,
+   "qty": "02",
+   "x": "48-11/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB7",
+   "page": 26,
+   "qty": "02",
+   "x": "15-3/4\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB8",
+   "page": 26,
+   "qty": "02",
+   "x": "48-11/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF7",
+   "page": 27,
+   "qty": "4",
+   "x": "15-3/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF8",
+   "page": 27,
+   "qty": "4",
+   "x": "51-1/4\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB7",
+   "page": 27,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB8",
+   "page": 27,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP7",
+   "page": 27,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP8",
+   "page": 27,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C6A",
+   "page": 28,
+   "qty": "02",
+   "x": "15\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C6B",
+   "page": 28,
+   "qty": "02",
+   "x": "29-5/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C11A",
+   "page": 28,
+   "qty": "02",
+   "x": "15\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C11B",
+   "page": 28,
+   "qty": "02",
+   "x": "29-5/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC9",
+   "page": 29,
+   "qty": "04",
+   "x": "15\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC10",
+   "page": 29,
+   "qty": "04",
+   "x": "26-11/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB9",
+   "page": 29,
+   "qty": "04",
+   "x": "15\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB10",
+   "page": 29,
+   "qty": "04",
+   "x": "26-11/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF9",
+   "page": 30,
+   "qty": "8",
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF10",
+   "page": 30,
+   "qty": "8",
+   "x": "29-1/4\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB9",
+   "page": 30,
+   "qty": "8",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB10",
+   "page": 30,
+   "qty": "8",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP9",
+   "page": 30,
+   "qty": "8",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP10",
+   "page": 30,
+   "qty": "8",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C14A",
+   "page": 31,
+   "qty": "02",
+   "x": "15\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C14B",
+   "page": 31,
+   "qty": "02",
+   "x": "29-5/8\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC11",
+   "page": 32,
+   "qty": "02",
+   "x": "15\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC12",
+   "page": 32,
+   "qty": "02",
+   "x": "26-11/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB11",
+   "page": 32,
+   "qty": "02",
+   "x": "15\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB12",
+   "page": 32,
+   "qty": "02",
+   "x": "26-11/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF11",
+   "page": 33,
+   "qty": "4",
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF12",
+   "page": 33,
+   "qty": "4",
+   "x": "29-1/4\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB11",
+   "page": 33,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB12",
+   "page": 33,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP11",
+   "page": 33,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP12",
+   "page": 33,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C32A",
+   "page": 34,
+   "qty": "02",
+   "x": "16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C32B",
+   "page": 34,
+   "qty": "02",
+   "x": "31-1/4\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC13",
+   "page": 35,
+   "qty": "02",
+   "x": "15\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC14",
+   "page": 35,
+   "qty": "02",
+   "x": "26-11/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB13",
+   "page": 35,
+   "qty": "02",
+   "x": "15\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB14",
+   "page": 35,
+   "qty": "02",
+   "x": "26-11/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF13",
+   "page": 36,
+   "qty": "4",
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF14",
+   "page": 36,
+   "qty": "4",
+   "x": "29-1/4\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB13",
+   "page": 36,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB14",
+   "page": 36,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP13",
+   "page": 36,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP14",
+   "page": 36,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C10A",
+   "page": 37,
+   "qty": "02",
+   "x": "14\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C10B",
+   "page": 37,
+   "qty": "02",
+   "x": "31-1/4\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC15",
+   "page": 38,
+   "qty": "02",
+   "x": "14\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC16",
+   "page": 38,
+   "qty": "02",
+   "x": "28-1/4\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB15",
+   "page": 38,
+   "qty": "02",
+   "x": "14\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB16",
+   "page": 38,
+   "qty": "02",
+   "x": "28-1/4\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF15",
+   "page": 39,
+   "qty": "4",
+   "x": "13-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF16",
+   "page": 39,
+   "qty": "4",
+   "x": "30-7/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB15",
+   "page": 39,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB16",
+   "page": 39,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP15",
+   "page": 39,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP16",
+   "page": 39,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C8A",
+   "page": 40,
+   "qty": "02",
+   "x": "15\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C8B",
+   "page": 40,
+   "qty": "02",
+   "x": "29-5/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC17",
+   "page": 41,
+   "qty": "02",
+   "x": "15\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC18",
+   "page": 41,
+   "qty": "02",
+   "x": "26-11/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB17",
+   "page": 41,
+   "qty": "02",
+   "x": "15\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB18",
+   "page": 41,
+   "qty": "02",
+   "x": "26-11/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF17",
+   "page": 42,
+   "qty": "4",
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF18",
+   "page": 42,
+   "qty": "4",
+   "x": "29-1/4\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB17",
+   "page": 42,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB18",
+   "page": 42,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP17",
+   "page": 42,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP18",
+   "page": 42,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C7A",
+   "page": 43,
+   "qty": "02",
+   "x": "10-1/2\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C7B",
+   "page": 43,
+   "qty": "02",
+   "x": "39-1/16\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC19",
+   "page": 44,
+   "qty": "02",
+   "x": "10-1/2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC20",
+   "page": 44,
+   "qty": "02",
+   "x": "36-1/8\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB19",
+   "page": 44,
+   "qty": "02",
+   "x": "10-1/2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB20",
+   "page": 44,
+   "qty": "02",
+   "x": "36-1/8\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF19",
+   "page": 45,
+   "qty": "4",
+   "x": "10-1/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF20",
+   "page": 45,
+   "qty": "4",
+   "x": "38-11/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB19",
+   "page": 45,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB20",
+   "page": 45,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP19",
+   "page": 45,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP20",
+   "page": 45,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C16A",
+   "page": 46,
+   "qty": "02",
+   "x": "10-1/2\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C16B",
+   "page": 46,
+   "qty": "02",
+   "x": "42-3/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC21",
+   "page": 47,
+   "qty": "02",
+   "x": "10-1/2",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC22",
+   "page": 47,
+   "qty": "02",
+   "x": "39-1/4\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB21",
+   "page": 47,
+   "qty": "02",
+   "x": "10-1/2",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB22",
+   "page": 47,
+   "qty": "02",
+   "x": "39-1/4\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF21",
+   "page": 48,
+   "qty": "4",
+   "x": "10-1/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF22",
+   "page": 48,
+   "qty": "4",
+   "x": "41-13/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB21",
+   "page": 48,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB22",
+   "page": 48,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP21",
+   "page": 48,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP22",
+   "page": 48,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C18A",
+   "page": 49,
+   "qty": "02",
+   "x": "10-1/2\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C18B",
+   "page": 49,
+   "qty": "02",
+   "x": "42-3/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C20A",
+   "page": 49,
+   "qty": "02",
+   "x": "10-1/2\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C20B",
+   "page": 49,
+   "qty": "02",
+   "x": "42-3/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC23",
+   "page": 50,
+   "qty": "04",
+   "x": "10-1/2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC24",
+   "page": 50,
+   "qty": "04",
+   "x": "39-1/4\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB23",
+   "page": 50,
+   "qty": "04",
+   "x": "10-1/2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB24",
+   "page": 50,
+   "qty": "04",
+   "x": "39-1/4\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF23",
+   "page": 51,
+   "qty": "8",
+   "x": "10-1/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF24",
+   "page": 51,
+   "qty": "8",
+   "x": "41-13/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB23",
+   "page": 51,
+   "qty": "8",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB24",
+   "page": 51,
+   "qty": "8",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP23",
+   "page": 51,
+   "qty": "8",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP24",
+   "page": 51,
+   "qty": "8",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C27A",
+   "page": 52,
+   "qty": "01",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C27B",
+   "page": 52,
+   "qty": "01",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C28A",
+   "page": 52,
+   "qty": "01",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C28B",
+   "page": 52,
+   "qty": "01",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C35A",
+   "page": 52,
+   "qty": "01",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C35B",
+   "page": 52,
+   "qty": "01",
+   "x": "50-1/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC25",
+   "page": 53,
+   "qty": "06",
+   "x": "47-1/8\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB25",
+   "page": 53,
+   "qty": "06",
+   "x": "47-1/8\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF25",
+   "page": 53,
+   "qty": "12",
+   "x": "49-13/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB25",
+   "page": 54,
+   "qty": "6",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB26",
+   "page": 54,
+   "qty": "6",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP25",
+   "page": 54,
+   "qty": "6",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP26",
+   "page": 54,
+   "qty": "6",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C31A",
+   "page": 55,
+   "qty": "01",
+   "x": "45-3/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C31B",
+   "page": 55,
+   "qty": "01",
+   "x": "45-3/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC26",
+   "page": 56,
+   "qty": "02",
+   "x": "42-7/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB26",
+   "page": 56,
+   "qty": "02",
+   "x": "42-7/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "TB27",
+   "page": 57,
+   "qty": "2",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB28",
+   "page": 57,
+   "qty": "2",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP27",
+   "page": 57,
+   "qty": "2",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP28",
+   "page": 57,
+   "qty": "2",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C33A",
+   "page": 58,
+   "qty": "01",
+   "x": "45-3/8\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C33B",
+   "page": 58,
+   "qty": "01",
+   "x": "45-3/8\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC27",
+   "page": 59,
+   "qty": "02",
+   "x": "42-7/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB27",
+   "page": 59,
+   "qty": "02",
+   "x": "42-7/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF27",
+   "page": 59,
+   "qty": "4",
+   "x": "44-15/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB29",
+   "page": 60,
+   "qty": "2",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB30",
+   "page": 60,
+   "qty": "2",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP29",
+   "page": 60,
+   "qty": "2",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP30",
+   "page": 60,
+   "qty": "2",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C34A",
+   "page": 61,
+   "qty": "01",
+   "x": "45-3/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C34B",
+   "page": 61,
+   "qty": "01",
+   "x": "45-3/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC28",
+   "page": 62,
+   "qty": "02",
+   "x": "42-7/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB28",
+   "page": 62,
+   "qty": "02",
+   "x": "42-7/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF28",
+   "page": 62,
+   "qty": "04",
+   "x": "44-15/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB31",
+   "page": 63,
+   "qty": "2",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB32",
+   "page": 63,
+   "qty": "2",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP31",
+   "page": 63,
+   "qty": "2",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP32",
+   "page": 63,
+   "qty": "2",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C30A",
+   "page": 65,
+   "qty": "02",
+   "x": "16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C30B",
+   "page": 65,
+   "qty": "01",
+   "x": "30-1/8\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C30C",
+   "page": 65,
+   "qty": "01",
+   "x": "30-1/8\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C30D",
+   "page": 65,
+   "qty": "02",
+   "x": "30-1/8\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC29",
+   "page": 66,
+   "qty": "02",
+   "x": "16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC30",
+   "page": 66,
+   "qty": "04",
+   "x": "28-11/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB29",
+   "page": 66,
+   "qty": "02",
+   "x": "16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB30",
+   "page": 66,
+   "qty": "04",
+   "x": "28-11/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF29",
+   "page": 67,
+   "qty": "4",
+   "x": "15-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF30",
+   "page": 67,
+   "qty": "8",
+   "x": "29-3/4\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB33",
+   "page": 67,
+   "qty": "6",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB34",
+   "page": 67,
+   "qty": "6",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP33",
+   "page": 67,
+   "qty": "6",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP34",
+   "page": 67,
+   "qty": "6",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C24A",
+   "page": 69,
+   "qty": "02",
+   "x": "19-1/2\"",
+   "y": "108\"",
+   "finish_code": "MTL.1",
+   "recovered_merged_cell": true
+  },
+  {
+   "mark": "C24B",
+   "page": 69,
+   "qty": "01",
+   "x": "29-3/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1",
+   "recovered_merged_cell": true
+  },
+  {
+   "mark": "C24C",
+   "page": 69,
+   "qty": "01",
+   "x": "29-3/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1",
+   "recovered_merged_cell": true
+  },
+  {
+   "mark": "C24D",
+   "page": 69,
+   "qty": "02",
+   "x": "29-3/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1",
+   "recovered_merged_cell": true
+  },
+  {
+   "mark": "RC31",
+   "page": 70,
+   "qty": "02",
+   "x": "19-1/2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC32",
+   "page": 70,
+   "qty": "04",
+   "x": "27-7/8\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB31",
+   "page": 70,
+   "qty": "02",
+   "x": "19-1/2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB32",
+   "page": 70,
+   "qty": "04",
+   "x": "27-7/8\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF31",
+   "page": 71,
+   "qty": "4",
+   "x": "19-1/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF32",
+   "page": 71,
+   "qty": "8",
+   "x": "28-15/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB35",
+   "page": 71,
+   "qty": "6",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB36",
+   "page": 71,
+   "qty": "6",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP35",
+   "page": 71,
+   "qty": "6",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP36",
+   "page": 71,
+   "qty": "6",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C13A",
+   "page": 72,
+   "qty": "02",
+   "x": "22-1/2\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C13B",
+   "page": 72,
+   "qty": "02",
+   "x": "50-1/16\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC33",
+   "page": 73,
+   "qty": "02",
+   "x": "22-1/2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC34",
+   "page": 73,
+   "qty": "02",
+   "x": "47-1/8\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB33",
+   "page": 73,
+   "qty": "02",
+   "x": "22-1/2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB34",
+   "page": 73,
+   "qty": "02",
+   "x": "47-1/8\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF33",
+   "page": 74,
+   "qty": "4",
+   "x": "22-1/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF34",
+   "page": 74,
+   "qty": "4",
+   "x": "49-15/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB37",
+   "page": 74,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB38",
+   "page": 74,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP37",
+   "page": 74,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP38",
+   "page": 74,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C29A",
+   "page": 75,
+   "qty": "02",
+   "x": "15\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C29B",
+   "page": 75,
+   "qty": "02",
+   "x": "53-3/16\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC35",
+   "page": 76,
+   "qty": "02",
+   "x": "15\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC36",
+   "page": 76,
+   "qty": "02",
+   "x": "50-1/4\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB35",
+   "page": 76,
+   "qty": "02",
+   "x": "15\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB36",
+   "page": 76,
+   "qty": "02",
+   "x": "50-1/4\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF35",
+   "page": 77,
+   "qty": "4",
+   "x": "14-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF36",
+   "page": 77,
+   "qty": "4",
+   "x": "52-3/4\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB39",
+   "page": 77,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB40",
+   "page": 77,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP39",
+   "page": 77,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP40",
+   "page": 77,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C25A",
+   "page": 78,
+   "qty": "02",
+   "x": "19\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C25B",
+   "page": 78,
+   "qty": "02",
+   "x": "50-1/8\"",
+   "y": "132\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC37",
+   "page": 79,
+   "qty": "02",
+   "x": "19\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC38",
+   "page": 79,
+   "qty": "02",
+   "x": "47-1/8\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB37",
+   "page": 79,
+   "qty": "02",
+   "x": "19\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB38",
+   "page": 79,
+   "qty": "02",
+   "x": "47-1/8\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF37",
+   "page": 80,
+   "qty": "4",
+   "x": "18-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF38",
+   "page": 80,
+   "qty": "4",
+   "x": "49-15/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB41",
+   "page": 80,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB42",
+   "page": 80,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP41",
+   "page": 80,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP42",
+   "page": 80,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C5A",
+   "page": 81,
+   "qty": "02",
+   "x": "26\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C5B",
+   "page": 81,
+   "qty": "02",
+   "x": "34-3/8\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC39",
+   "page": 82,
+   "qty": "02",
+   "x": "26\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC40",
+   "page": 82,
+   "qty": "02",
+   "x": "31-7/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB39",
+   "page": 82,
+   "qty": "02",
+   "x": "26\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB40",
+   "page": 82,
+   "qty": "02",
+   "x": "31-7/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF39",
+   "page": 83,
+   "qty": "4",
+   "x": "25-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF40",
+   "page": 83,
+   "qty": "4",
+   "x": "33-15/16\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB43",
+   "page": 83,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB44",
+   "page": 83,
+   "qty": "4",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP43",
+   "page": 83,
+   "qty": "4",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP44",
+   "page": 83,
+   "qty": "4",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "C26A",
+   "page": 85,
+   "qty": "02",
+   "x": "18\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C26B",
+   "page": 85,
+   "qty": "01",
+   "x": "37-15/16\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C26C",
+   "page": 85,
+   "qty": "01",
+   "x": "37-15/16\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "C26D",
+   "page": 85,
+   "qty": "02",
+   "x": "37-15/16\"",
+   "y": "108\"",
+   "finish_code": "MTL.1"
+  },
+  {
+   "mark": "RC41",
+   "page": 86,
+   "qty": "02",
+   "x": "18\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RC42",
+   "page": 86,
+   "qty": "04",
+   "x": "36-7/16\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB41",
+   "page": 86,
+   "qty": "02",
+   "x": "18\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "RB42",
+   "page": 86,
+   "qty": "04",
+   "x": "36-7/16\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "STF41",
+   "page": 87,
+   "qty": "4",
+   "x": "17-5/8\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "STF42",
+   "page": 87,
+   "qty": "8",
+   "x": "37-1/2\"",
+   "y": "3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB45",
+   "page": 87,
+   "qty": "6",
+   "x": "1-1/2\"",
+   "y": "7-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "TB46",
+   "page": 87,
+   "qty": "6",
+   "x": "1-1/2\"",
+   "y": "5-3/4\"",
+   "finish_code": null
+  },
+  {
+   "mark": "CP45",
+   "page": 87,
+   "qty": "6",
+   "x": "2\"",
+   "y": "8\"",
+   "finish_code": "SS.1"
+  },
+  {
+   "mark": "CP46",
+   "page": 87,
+   "qty": "6",
+   "x": "2\"",
+   "y": "6\"",
+   "finish_code": "SS.1"
+  }
+ ],
+ "fastener_parts": [
+  {
+   "mark": "SCREW-12x0.75",
+   "page": null,
+   "qty": "",
+   "x": null,
+   "y": null,
+   "finish_code": null,
+   "note": "#12 x 3/4\" self-tapping anchor screw, 16 GA SS, matching finish; callout-only, no verifiable qty -> FASTENER_QTY_UNVERIFIED",
+   "source": "callout"
+  }
+ ],
+ "expected_total": 282,
+ "expected_schedule_total": 281,
+ "family_counts": {
+  "C": 64,
+  "CP": 46,
+  "RB": 42,
+  "RC": 42,
+  "STF": 41,
+  "TB": 46
+ },
+ "methods_agree": false
+}
