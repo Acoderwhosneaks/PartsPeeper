@@ -50,17 +50,28 @@ def _col_index(header, pat):
 
 # ---- METHOD 1: raw ruled-grid parse -------------------------------------
 
+def _recover_qty_from_text(page_text, mark):
+    """Some schedule tables (p56 STF26) are detected WITHOUT their QTY column —
+    the value falls outside the ruled bbox. Recover it from the page text:
+    <MARK> <X> <Y> <QTY>. Returns qty string or ''. """
+    m = re.search(re.escape(mark) + r'\s+[0-9][0-9/\-"\s]*?\s+[0-9][0-9/\-"\s]*?\s+(\d{1,3})\b', page_text)
+    return m.group(1) if m else ""
+
+
 def extract_via_grids(pdf):
     parts = []
     for pageno, page in enumerate(pdf.pages, 1):
+        page_text = page.extract_text() or ""
         for grid in page.extract_tables():
             if not grid or not grid[0]:
                 continue
             header = [_norm(c) for c in grid[0]]
             ci_mark = _col_index(header, PARTNO)
             ci_qty = _col_index(header, QTY)
-            if ci_mark is None or ci_qty is None:
-                continue  # not a part schedule
+            if ci_mark is None:
+                continue  # not a part schedule (QTY column may be absent, that's ok)
+            if any(len(_norm(c)) > 60 for c in grid[0]):
+                continue  # junk mega-table
             ci_fin = _col_index(header, FINISH)
             ci_x = _col_index(header, XCOL)
             ci_y = _col_index(header, YCOL)
@@ -92,18 +103,27 @@ def extract_via_grids(pdf):
                         r = rows_for[k] if k < len(rows_for) else row
                         parts.append({
                             "mark": t, "page": pageno,
-                            "qty": cell(ci_qty, r), "x": cell(ci_x, r), "y": cell(ci_y, r),
+                            "qty": cell(ci_qty, r) or _recover_qty_from_text(page_text, t),
+                            "x": cell(ci_x, r), "y": cell(ci_y, r),
                             "finish_code": fin or None,
                             "recovered_merged_cell": True,
                         })
                     i = j
                     continue
                 if MARK.match(markcell):
-                    parts.append({
+                    qty = cell(ci_qty)
+                    recovered_noqty = False
+                    if not qty:
+                        qty = _recover_qty_from_text(page_text, markcell)
+                        recovered_noqty = bool(qty) and ci_qty is None
+                    rec = {
                         "mark": markcell, "page": pageno,
-                        "qty": cell(ci_qty), "x": cell(ci_x), "y": cell(ci_y),
+                        "qty": qty, "x": cell(ci_x), "y": cell(ci_y),
                         "finish_code": fin or None,
-                    })
+                    }
+                    if recovered_noqty:
+                        rec["recovered_missing_qty_col"] = True
+                    parts.append(rec)
                 i += 1
     return parts
 
@@ -160,14 +180,26 @@ def main():
         "source": "callout",
     }
 
+    expected_marks = sorted({p["mark"] for p in grid_parts} | {fastener["mark"]})
     oracle = {
+        "oracle_version": "1.1",
+        "profile": "moz-miami-fixture1",
         "input": INPUT,
-        "schedule_parts": grid_parts,
-        "fastener_parts": [fastener],
+        # consumable gate inputs (ceres seq65: gate reconciles mark-by-mark off THIS)
+        "expected_marks": expected_marks,
         "expected_total": len(grid_parts) + 1,
         "expected_schedule_total": len(grid_parts),
-        "family_counts": dict(sorted(fam.items())),
-        "methods_agree": not only_grid and not only_word,
+        "expected_by_family": dict(sorted(fam.items())),
+        "fastener_mark": fastener["mark"],
+        # per-part expected specs (verbatim) for spec-level verification
+        "schedule_parts": grid_parts,
+        "fastener_parts": [fastener],
+        # provenance / QA
+        "recovered_notes": {
+            "merged_mark_cells": sorted({p["mark"] for p in grid_parts if p.get("recovered_merged_cell")}),
+            "missing_qty_column": sorted({p["mark"] for p in grid_parts if p.get("recovered_missing_qty_col")}),
+        },
+        "cross_check_methods_agree": not only_grid and not only_word,
     }
     with open("playtest/oracle.json", "w") as f:
         json.dump(oracle, f, indent=1)
