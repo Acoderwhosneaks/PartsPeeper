@@ -263,13 +263,22 @@ def test_oracle_self_consistency_flags_internal_mismatch():
     assert any("expected_by_family" in p for p in problems)
 
 
+def _oracle(parts, cross=True):
+    marks = [p["mark"] for p in parts]
+    fam = {}
+    for m in marks:
+        fam[V.family_of(m)] = fam.get(V.family_of(m), 0) + 1
+    return {"parts": parts, "expected_marks": marks, "expected_total": len(marks),
+            "expected_by_family": fam, "cross_check_methods_agree": cross}
+
+
 def test_validate_against_oracle_catches_dropped_mark():
     # phobos seq64/ceres seq65: reconcile MARK-BY-MARK, not just totals.
-    oracle = {"parts": [
+    oracle = _oracle([
         {"mark": "C24A", "qty": 2}, {"mark": "C24B", "qty": 1},
         {"mark": "C24C", "qty": 1}, {"mark": "C24D", "qty": 2},
         {"mark": "RC24", "qty": 1},
-    ]}
+    ])
     # pipeline dropped the 4 stacked-cell marks, emitted only RC24
     recs = [_rec(part_mark="RC24", assembly="RC24", dim_x='1"', dim_y='1"',
                  dim_dia=None, finish="", description='RC24 / cap / 1" x 1".')]
@@ -277,6 +286,36 @@ def test_validate_against_oracle_catches_dropped_mark():
     assert not rep["ok"]
     missing = {e["part_mark"] for e in rep["coverage"]["errors"] if e["type"] == "MISSING"}
     assert {"C24A", "C24B", "C24C", "C24D"} <= missing, "each dropped mark named individually"
+
+
+def test_provisional_oracle_cannot_certify_completeness():
+    # ceres seq73: cross_check_methods_agree=False -> gate refuses to certify,
+    # EVEN when every expected mark is present.
+    parts = [{"mark": "C1"}, {"mark": "C2"}, {"mark": "RC1"}]
+    recs = [_rec(part_mark=p["mark"], assembly=p["mark"], dim_x='1"', dim_y='1"',
+                 dim_dia=None, finish="", description=f'{p["mark"]} / p / 1" x 1".')
+            for p in parts]
+    prov = _oracle(parts, cross=False)
+    rep = V.validate_against_oracle(recs, prov)
+    assert not rep["ok"], "provisional oracle must not certify completeness"
+    assert any(e["type"] == "ORACLE_NOT_CROSS_VALIDATED" for e in rep["errors"])
+    assert rep["oracle"]["provisional"] is True
+    # same records + a cross-validated oracle -> clean pass
+    rep2 = V.validate_against_oracle(recs, _oracle(parts, cross=True))
+    assert rep2["ok"], V.format_report(rep2)
+    assert rep2["oracle"]["cross_validated"] is True
+
+
+def test_provisional_dry_run_opt_out():
+    parts = [{"mark": "C1"}, {"mark": "C2"}]
+    recs = [_rec(part_mark=p["mark"], assembly=p["mark"], dim_x='1"', dim_y='1"',
+                 dim_dia=None, finish="", description=f'{p["mark"]} / p / 1" x 1".')
+            for p in parts]
+    # explicit dry-run against a provisional oracle: allowed, but still labelled provisional
+    rep = V.validate_against_oracle(recs, _oracle(parts, cross=False),
+                                    require_cross_validated=False)
+    assert rep["ok"], "dry-run opt-out lets a provisional check pass"
+    assert rep["oracle"]["provisional"] is True
 
 
 def _run():

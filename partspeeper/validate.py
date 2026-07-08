@@ -232,11 +232,52 @@ def oracle_self_consistency(oracle):
     return problems
 
 
-def validate_against_oracle(records, oracle):
+def oracle_is_cross_validated(oracle) -> bool:
+    """True only if the oracle asserts its own methods agree.
+
+    ceres seq73 locked this: a provisional (single-method / not-yet-reconciled)
+    count is NOT acceptance truth. The oracle publishes `cross_check_methods_agree`;
+    absent the flag we treat it as NOT cross-validated (fail closed).
+    """
+    if isinstance(oracle, dict):
+        return oracle.get("cross_check_methods_agree") is True
+    return False
+
+
+def validate_against_oracle(records, oracle, *, require_cross_validated=True):
     """Full [D] validation with the acceptance target sourced from the oracle,
-    reconciling MARK-BY-MARK (not just totals) per ceres seq65."""
+    reconciling MARK-BY-MARK (not just totals) per ceres seq65.
+
+    Completeness can only be CERTIFIED against a cross-validated oracle (seq73).
+    If the oracle is provisional (cross_check_methods_agree != True) or internally
+    inconsistent, the report is forced to not-ok with an ORACLE_NOT_CROSS_VALIDATED
+    / ORACLE_INCONSISTENT error — the gate refuses to bless a number the oracle
+    itself hasn't reconciled. Pass require_cross_validated=False only for a
+    provisional dry-run (clearly labelled), never for a completeness sign-off.
+    """
     marks, fam_counts = expected_from_oracle(oracle)
-    return validate(records, expected_marks=marks, expected_family_counts=fam_counts)
+    rep = validate(records, expected_marks=marks, expected_family_counts=fam_counts)
+
+    inconsistencies = oracle_self_consistency(oracle)
+    cross_ok = oracle_is_cross_validated(oracle)
+    rep["oracle"] = {
+        "cross_validated": cross_ok,
+        "self_consistency": inconsistencies,
+        "n_expected_marks": len(marks),
+        "provisional": not cross_ok,
+    }
+    gate_errors = []
+    for problem in inconsistencies:
+        gate_errors.append({"type": "ORACLE_INCONSISTENT", "detail": problem})
+    if require_cross_validated and not cross_ok:
+        gate_errors.append({
+            "type": "ORACLE_NOT_CROSS_VALIDATED",
+            "detail": "oracle.cross_check_methods_agree is not True — acceptance "
+                      "count is PROVISIONAL; completeness cannot be certified (seq73)."})
+    if gate_errors:
+        rep["errors"] = gate_errors + rep["errors"]
+        rep["ok"] = False
+    return rep
 
 
 def _tokens_present(haystack: str, token) -> bool:
